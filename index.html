@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,16 +26,97 @@
         navbar should always be at the top of the viewport;
         should have at least one media query;
         should utilize CSS flexbox at least once;
-     -->
-     <header id="header">
-         <img src="" alt="company logo" id="header-img">
-         <nav id="nav-bar">
-             <ul>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
-            </ul>
-         </nav>
-     </header>
+    -->
+    <header id="header">
+        <div>
+            <img src="https://www.pngplay.com/wp-content/uploads/1/Letter-L-PNG.png" alt="company logo" id="header-img">
+            <span>LANG</span>
+        </div>
+        <nav id="nav-bar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#how-works" class="nav-link">How it works</a>
+            <a href="#why" class="nav-link">Why Learn</a>
+            <a href="#contact" class="nav-link">Contact us</a>
+        </nav>
+    </header>
+    <main id="home">
+        <img src="lang-banner.png" alt="Multi-language Banner" id='lang-banner'>
+
+        <h1>Make language learning easy and fun!</h1>
+        <div id="download-btns">
+            <button><i class="fab fa-apple fa-lg fa-fw"></i>App Store</button>
+            <button>
+                <i class="fab fa-google-play fa-fw"></i>
+                Google Play
+            </button>
+        </div>
+    </main>
+    <section id="how-works">
+        <div class="card">
+            <p class="card-icon">
+                <i class="fas fa-chalkboard-teacher fa-2x"></i>
+            </p>
+            <p class="card-header">Customized Learning</p>
+            <p class="card-body">
+                Our lessons adapts to your learning styles. Exercises are tailored to help you learn and review vocabularies effectively.
+            </p>
+        </div>
+        <div class="card">
+            <p class="card-icon">
+                <i class="fas fa-check-square fa-2x"></i>
+            </p>
+            <p class="card-header">Immediate grading</p>
+            <p class="card-body">
+                Instantly see which answers you get correct. When you miss a challenge, we'll quickly show you how to improve.
+            </p>
+        </div>
+        <div class="card">
+            <p class="card-icon">
+                <i class="fas fa-gem fa-2x"></i>
+            </p>
+            <p class="card-header">Rewards Motivation</p>
+            <p class="card-body">
+                Earn virtual coins, unlock new levels, and watch your fluency score rise as you master new words, phrases, and grammar.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="why">
+        <iframe src="https://www.youtube.com/embed/gdyNd3glppo" title="Why learn a new language" id="video"></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Do you have a question? <a href="" id="faq-link">See FAQ here</a></p>
+        <p> 
+            <i class="fas fa-phone-square-alt fa-lg fa-fw"></i>800-800-8000 
+        </p>
+        <p>
+            <i class="fas fa-envelope fa-lg fa-fw"></i>support@lang.com
+        </p>
+        <p>
+            Follow us: 
+            <i class="fab fa-twitter-square fa-lg"></i>
+            <i class="fab fa-facebook-square fa-lg"></i>
+        </p>
+    </section>
+
+    <footer>
+        <div>
+            <p>
+                <a href="#">Privacy</a> 
+                <a href="#">Terms</a>
+            </p>
+            <p>
+                Copyright &copy;2021 All Rights Reserved
+            </p>
+        </div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="">Subscribe to our news:</label>
+            <input type="email" id="email" placeholder="Email">
+            <input type="submit" id="submit">
+        </form>
+    </footer>
 </body>
 </html>
