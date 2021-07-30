@@ -10,23 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 
-        a header element with a corresponding id="header";
-        an image within the header element with a corresponding id="header-img" - A company logo;
-        within the #header element, a nav element with a corresponding id="nav-bar";
-        3 or more clickable elements inside the nav element, each with the class nav-link;
-        click a .nav-link button in the nav element to get to the corresponding section of the page;
-        an embedded product video with id="video";
-        a form element with a corresponding id="form";
-        Within the form, there is an input field with id="email";
-        #email input field should have placeholder text;
-        #email input field uses HTML5 validation to validate email;
-        Within the form, there is a submit input with id="submit";
-        click the #submit element to submit the email to a static page (mock URL: https://www.freecodecamp.com/email-submit);
-        navbar should always be at the top of the viewport;
-        should have at least one media query;
-        should utilize CSS flexbox at least once;
-    -->
     <header id="header">
         <div>
             <img src="https://www.pngplay.com/wp-content/uploads/1/Letter-L-PNG.png" alt="company logo" id="header-img">
@@ -112,11 +95,15 @@
                 Copyright &copy;2021 All Rights Reserved
             </p>
         </div>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
             <label for="">Subscribe to our news:</label>
-            <input type="email" id="email" placeholder="Email">
-            <input type="submit" id="submit">
+            <input type="email" id="email" name='email' placeholder="Email">
+            <input type="submit" id="submit" value="send">
         </form>
     </footer>
+
+    <script>
+
+    </script>
 </body>
 </html>

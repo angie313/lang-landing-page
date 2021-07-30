@@ -15,12 +15,13 @@ body {
 }
 
 #header {
-  background-color: rgba(27, 27, 122, 0.708);
+  background-color: rgba(27, 27, 122, 0.52);
   width: 100vw;
   height: 70px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  position: fixed;
   /* padding: 10px; */
 }
 
@@ -56,6 +57,7 @@ body {
   min-height: auto;
   position: relative;
   padding-bottom: 50px;
+  top: 70px;
 }
 
 #home::before {
@@ -97,8 +99,8 @@ body {
   width: 200px;
   padding: 10px;
   /* font-size: 20px; */
-  color: white;
-  background-color: black;
+  /* color: white; */
+  background-color: white;
   border-radius: 0.5em;
 }
 
@@ -181,7 +183,7 @@ iframe {
 }
 
 footer {
-  background-color: navy;
+  background-color: rgba(27, 27, 122, 0.708);
   height: 70px;
   padding: 0 20px;
   color: white;
