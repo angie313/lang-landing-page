@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Poppins:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +8,11 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
 
 #header-img {
-  /* display: block; */
   height: 90%;
 }
 
@@ -22,7 +24,6 @@ body {
   justify-content: space-between;
   overflow: hidden;
   position: fixed;
-  /* padding: 10px; */
 }
 
 #header div {
@@ -31,6 +32,12 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+#header span {
+  font-family: "Courgette", cursive;
+  font-size: 1.75em;
+  color: black;
 }
 
 #nav-bar {
@@ -45,7 +52,6 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  /* font-size: 18px; */
 }
 
 #nav-bar a:hover {
@@ -82,10 +88,12 @@ body {
 
 #home h1 {
   width: 500px;
-  /* font-size: 4em; */
+  font-size: 2.2em;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
 }
 
 #download-btns {
@@ -97,9 +105,8 @@ body {
 
 #home button {
   width: 200px;
-  padding: 10px;
-  /* font-size: 20px; */
-  /* color: white; */
+  padding: 15px;
+  font-size: 1.2em;
   background-color: white;
   border-radius: 0.5em;
 }
@@ -110,15 +117,17 @@ body {
 }
 
 #how-works {
-  width: 100vw;
-  padding: 50px 30px;
+  width: 80vw;
+  margin: 120px auto 0 auto;
+  /* padding: 30px; */
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #how-works .card {
-  width: 450px;
-  height: 380px;
+  width: 350px;
+  height: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -127,14 +136,14 @@ body {
 }
 
 .card-header {
-  /* font-size: 1.5em; */
+  font-size: 1.2em;
   color: navy;
   text-transform: uppercase;
 }
 
 .card-body {
+  font-family: "Poppins", sans-serif;
   text-align: justify;
-  /* font-size: 22px; */
   padding: 0 50px;
   height: 200px;
   line-height: 1.5;
@@ -152,7 +161,6 @@ body {
 
 #why {
   text-align: center;
-  /* padding-bottom: 10%; */
 }
 
 iframe {
@@ -167,10 +175,6 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-#contact p {
-  /* font-size: 20px; */
 }
 
 .fa-phone-square-alt,
@@ -194,20 +198,40 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: rgba(242, 225, 225, 1);
+}
+
+#privacy {
+  font-size: 0.85em;
+  color: rgba(242, 225, 225, 1);
 }
 
 #email {
   padding: 5px;
+  width: 200px;
 }
 
 #submit {
-  padding: 5px 10px;
+  padding: 8px 25px;
   border-radius: 0.5em;
-  border: 1px solid blacks;
-  background-color: green;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-style: none;
+  cursor: pointer;
 }
 
 #form * {
   margin-left: 10px;
+}
+
+@media (max-width: 720px) {
+  #download-btns {
+    display: block;
+  }
+  #download-btns button {
+    display: block;
+    margin: 15px auto;
+  }
 }
